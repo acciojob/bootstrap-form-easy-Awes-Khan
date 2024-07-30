@@ -8,7 +8,64 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+
+	<div class="container mt-5">
+        <h2 class="text-center mb-4">Intern Application Form</h2>
+        <form id="application-form">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first-name-input">First Name</label>
+                    <input type="text" class="form-control" id="first-name-input" placeholder="Enter First Name" required>
+                    <div class="invalid-feedback">Please provide a valid first name.</div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="last-name-input">Last Name</label>
+                    <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name" required>
+                    <div class="invalid-feedback">Please provide a valid last name.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email-input">Email</label>
+                <input type="email" class="form-control" id="email-input" placeholder="Enter Email" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+            </div>
+            <div class="form-group">
+                <label for="college-input">College Name</label>
+                <input type="text" class="form-control" id="college-input" placeholder="Enter College Name" required>
+                <div class="invalid-feedback">Please provide a valid college name.</div>
+            </div>
+            <div class="form-group">
+                <label for="roll-no-input">Roll No</label>
+                <input type="text" class="form-control" id="roll-no-input" placeholder="Enter Roll No" required>
+                <div class="invalid-feedback">Please provide a valid roll number.</div>
+            </div>
+            <div class="form-group">
+                <label for="graduation-year">Graduation Year</label>
+                <select id="graduation-year" class="form-control" required>
+                    <option value="">Select Graduation Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div class="invalid-feedback">Please select your graduation year.</div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="conditions-checkbox" required>
+                <label class="form-check-label" for="conditions-checkbox">
+                    I agree to the <a href="#">terms and conditions</a>.
+                </label>
+                <div class="invalid-feedback">You must agree to the terms and conditions.</div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
